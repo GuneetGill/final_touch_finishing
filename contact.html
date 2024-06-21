@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/contact.css">
+
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "Y6VsE4Zvi9PgJjtUj",
+        });
+    })();
+    </script>
+    <script src="contact.js"></script>
+
+</head>
+<body>
+    <special-header></special-header>
+
+    <script src="main.js"></script> <!-- Link to the JavaScript file -->
+
+    <div class = "contact_form">
+
+            <div class="text_container">
+                <h1>Contact Us</h1>
+                <p>Let’s discuss how we can make your home renovation idea a reality.</p>
+                <p><br></p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <img src="images/email-icon.png" alt="Email Icon" class="icon">
+                        <h4><a href="mailto:finishingfinaltouch@gmail.com">finishingfinaltouch@gmail.com</a></h4>
+                    </div>
+                    <div class="contact-item-2">
+                        <img src="images/phone-icon.png" alt="Phone Icon" class="icon">
+                        <h4><a href="tel:6045377498">(604) 537-7498</a></h4>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="form_container">
+                <form onsubmit="sendMail(event)">
+                    <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
+                    <input type="email" placeholder="Email Address" id="email" class="item" autocomplete="off">
+                    <input type="tel" placeholder="Phone Number" id="phone" class="item" autocomplete="off">
+                    <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">
+                    <textarea id="message" rows="10" placeholder="Message"></textarea>
+                    <button type="submit" class="send_button">Send</button>
+                </form>
+                
+            </div>
+            
+    </div>
+
+  
+    <special-footer></special-footer>
+</body>
+
+</html>
+

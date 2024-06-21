@@ -1,0 +1,119 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.image-container {
+  margin-top: 30px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    display: grid;
+    place-items: center;
+  }
+
+  .banner{
+    width: 1200px;
+    height: 450px;
+    opacity: 0.4;
+    top: 30px;
+    object-fit: cover;
+  }
+
+  /* Style the overlay-text */
+  .overlay-text {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: black; 
+    padding: 10px 20px; 
+    font-size: 50px; 
+    text-align: center; 
+    font-weight: bolder;
+  }
+
+  .text{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: larger;
+    object-fit: cover;
+  }
+
+  .photo-grid{
+    position: relative;
+    min-height: 100vh;
+  }
+
+  .photo-grid .photo-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:15px;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 50px; 
+  }
+
+  .photo-grid .photo-container .image{
+    height: 250px;
+    width: 350px;
+    overflow: hidden;
+
+  }
+
+  .photo-grid .photo-container .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+  }
+
+  .photo-grid .photo-container .image:hover img{
+    transform: scale(1.1);
+  }
+
+  .photo-grid .popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .photo-grid .popup span{
+    position: absolute;
+    top:80px;
+    right:10px;
+    z-index: 100;
+  }
+
+  .photo-grid .popup img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    object-fit: contain;
+    max-width: 90%;
+    max-height: 90%;
+  }
+
+  /* mobile device or tablet formatting */
+  @media (max-width:768px) {
+    .photo-grid .popup img{
+      margin-top: 50px;
+      width: 80%;
+      height: 80%;
+      object-fit: contain;
+    }
+    
+  }
+

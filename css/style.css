@@ -1,0 +1,208 @@
+/* GENERAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* Reset and remove all default padding */
+*{
+    margin: 0;
+    padding: 0;
+    border:0;
+    outline:0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: large;
+    color: #808080;
+    /* min-height: 5000px; */
+    padding-top: 60px;
+}
+.container{
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+/*Header content */
+.header{
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  top: 0;
+  z-index: 1000; 
+}
+.header__content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 60px; 
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.logo__img{
+  display: block;
+  width: 300px;
+  height: auto;
+  align-items: flex-start;
+}
+
+.nav__list{
+  display: flex;
+  column-gap: 40px;
+}
+
+.nav__link{
+  color: rgba(220,220,220,0.75);
+  transition: all 0.4s;
+}
+.active{
+  color:black;
+}
+
+.nav__link:hover,.nav__link:focus{
+  color: rgba(220,220,220,1);
+}
+
+/*footer*/
+.footer {
+  text-align: center; /* Center the text in the footer */
+}
+
+.footerBottom{
+  background-color: #000;
+  padding: 8px;
+  text-align: center;
+}
+.footerBottom p{
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: small;
+}
+
+/*Media Queries to make website responsive for smaller screen*/
+@media(max-width : 550px) {
+  .header__content{
+    flex-direction: column;
+    padding: 25px 0;
+    row-gap: 18px;
+    align-items: center;
+  }
+  
+}
+.nav__list {
+    column-gap: 20px;
+}
+
+/* banner images styled*/
+.image-container {
+  margin-top: 30px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 100px;
+  }
+
+  .banner{
+    width: 1200px;
+    height: 450px;
+    opacity: 0.4;
+    top: 30px;
+    object-fit: cover;
+  }
+
+  /* Style the overlay-text */
+  .overlay-text {
+    position: absolute;
+    top: 50%; /* Adjust this value to vertically center the text */
+    left: 50%; /* Adjust this value to horizontally center the text */
+    transform: translate(-50%, -50%); 
+    color: black; 
+    padding: 10px 20px; 
+    font-size: 50px; 
+    text-align: center; 
+    font-weight: 700;
+  }
+
+  .text{
+    text-align: center;
+    margin-bottom: 10px;
+    object-fit: cover;
+  }
+
+  p{
+    font-size: larger;
+    text-align: center;
+    font-weight: 200;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.bottom-para{
+  margin-bottom: 30px;
+
+}
+
+
+  /* Style text to jump to different parts of webpage */
+  .jump {
+    position: absolute;
+    top: 73%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: black; 
+    padding: 10px 20px; 
+    font-size: 20px;  
+    font-weight: 400;
+    border: 1.5px solid black; 
+    text-decoration: none; /* Remove default underline */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+
+  /* Style text to jump to different parts of webpage */
+  .jump-top {
+    position: absolute;
+    top: 73%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: black; 
+    padding: 10px 20px; 
+    font-size: 20px;  
+    font-weight: 400;
+    border: 1.5px solid black; 
+    text-decoration: none; /* Remove default underline */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    margin-top: 25px;
+}
+
+.jump-top:hover,
+.jump:hover {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+  

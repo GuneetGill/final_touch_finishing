@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/style.css"> 
+    <link rel="stylesheet" href="./css/portfolio.css"> 
+</head>
+<body>
+    <special-header></special-header>
+
+    <div class="image-container">
+        <img class = "banner" src="images/kitchen.jpg" alt="image">
+        <div class="overlay-text">
+          Portfolio
+        </div>
+    </div>
+    <p class = "text">Find Inspiration for your Next Project</p>
+
+    <div class="photo-grid">
+
+    <div class = "photo-container">
+
+        <div class = "image"><img src = "images/IMG_0036.jpeg"></div>
+        <div class = "image"><img src = "images/IMG_0039.jpeg"></div>
+        <div class = "image"><img src = "images/IMG_0040.jpeg"></div>
+        <div class = "image"><img src = "images/wall_decor.jpeg"></div>
+        <div class = "image"><img src = "images/wall.jpeg"></div>
+        <div class = "image"><img src = "images/tester.png"></div>
+        <div class = "image"><img src = "images/tester.png"></div>
+        <div class = "image"><img src = "images/tester.png"></div>
+        <div class = "image"><img src = "images/tester.png"></div>
+        
+    </div>
+
+    <div class = "popup">
+        <span>&times;</span>
+        <img src = "images/tester.png" alt = "">
+    </div>
+
+    </div>  
+
+    <script>
+        document.querySelectorAll('.photo-container img').forEach(image=>{
+            image.onclick = () =>{
+                document.querySelector('.popup').style.display = 'flex';
+                document.querySelector('.popup img').src = image.getAttribute('src');
+            }
+        });
+
+        document.querySelector('popup span').onclick = () =>{
+            document.querySelector('.popup').style.display = 'none';
+
+    }
+    </script>
+   
+
+    <special-footer></special-footer>
+    <script src="main.js"></script> 
+
+</body>
+</html>

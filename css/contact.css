@@ -1,0 +1,130 @@
+/*Contact Form*/
+
+.contact_form {
+    display: flex;
+    justify-content: flex-end; /* Aligns the form to the right */
+    padding: 20px; /* Optional: Add some padding around the container */
+  }
+  
+  .text_container {
+    max-width: 80%; /* Adjust as necessary to fit your design */
+    margin-right: 10px; /* Add space between text and form */
+    margin-top: 80px;
+    font-size: larger;
+  }
+  
+  .text_container h1 {
+    margin-bottom: 20px;
+  }
+  
+  .text_container p{
+    font-size: large;
+  }
+  
+  .form_container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 50px;
+    margin-right: 80px;
+    text-align: left; /* Ensure text inside the form is left-aligned */
+  }
+  
+  form{
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+  }
+  
+  form h1{
+    color: #808080;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  
+  form input, form textarea{
+    border: 1px solid #808080; 
+    margin: 10px 0;
+    padding: 20px;
+    outline-color: #808080;
+    font-family: "Raleway", sans-serif;
+  }
+  
+  form button{
+    padding: 15px;
+    border: 2px solid #3B719F; 
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+  }
+
+  .send_button {
+    background-color: gray; /* Green */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.send_button:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+/* phone and email on contact page */
+.contact-details {
+  text-align: left;
+  width: 100%;
+}
+
+.contact-details h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.contact-item img.icon,
+.contact-item-2 img.icon {
+    width: 24px; /* Adjust the size as needed */
+    height: 24px; /* Adjust the size as needed */
+}
+
+.contact-item,
+.contact-item-2 {
+    display:flex; /* Changed from inline-flex to block */
+    align-items: center;
+    gap: 10px;
+}
+
+/* phone view mode */
+@media (max-width: 768px) {
+  .contact_form {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center items vertically */
+  }
+  .text_container,
+  .form_container {
+    width: 100%; /* Full width on smaller screens */
+    max-width: none; /* Remove max-width to allow full flexibility */
+    margin-right: 0; /* Remove right margin */
+    margin-top: 20px; /* Adjust top margin for spacing */
+    text-align: center; /* Center align text and form on smaller screens */
+  }
+
+  .text_container h1 {
+    padding-top: 60px; /* Ensure no top margin for the title */
+  }
+
+  .contact-item,
+  .contact-item-2 {
+    justify-content: center; /* Center align items horizontally */
+  }
+
+  .text_container p{
+    margin-bottom: 0px;
+  }
+
+}
