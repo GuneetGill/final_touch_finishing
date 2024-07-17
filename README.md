@@ -5,6 +5,6 @@ www.finaltouchfinishing.ca
 
 ##**Technologies Used**
 - **HTML:** For the website's structure and content.
--** CSS:** For styling and layout.
+- **CSS:** For styling and layout.
 - **JavaScript:** For interactive elements and enhanced user experience.
 - **Deployment Platform:** Porkbun
