@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="icon" href="images/logo-png.png" > 
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/contact.css">
 
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
+
     <script type="text/javascript">
     (function(){
         emailjs.init({
@@ -17,6 +19,7 @@
         });
     })();
     </script>
+
     <script src="contact.js"></script>
 
 </head>
@@ -40,11 +43,19 @@
                         <img src="images/phone-icon.png" alt="Phone Icon" class="icon">
                         <h4><a href="tel:6045377498">(604) 537-7498</a></h4>
                     </div>
+                    <div class="contact-item-3">
+                        <img src="images/pin-icon.png" alt="Pin Icon" class="icon">
+                        <h4>Greater Vancouver Area</h4>
+                    </div>
                 </div>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d667425.6476847061!2d-122.99572691997277!3d49.19806613732432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5462ce9005f9dfa5%3A0xce9c6c979ef4fca6!2sMetro%20Vancouver%2C%20BC!5e0!3m2!1sen!2sca!4v1729033751196!5m2!1sen!2sca" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
             </div>
 
             
             <div class="form_container">
+
                 <form onsubmit="sendMail(event)">
                     <input type="text" placeholder="Full Name" id="name" class="item" autocomplete="off">
                     <input type="email" placeholder="Email Address" id="email" class="item" autocomplete="off">
@@ -57,7 +68,6 @@
             </div>
             
     </div>
-
   
     <special-footer></special-footer>
 </body>

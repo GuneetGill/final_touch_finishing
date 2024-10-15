@@ -2,13 +2,13 @@
 
 .contact_form {
     display: flex;
-    justify-content: flex-end; /* Aligns the form to the right */
-    padding: 20px; /* Optional: Add some padding around the container */
+    justify-content: flex-end; 
+    padding: 20px; 
   }
   
   .text_container {
-    max-width: 80%; /* Adjust as necessary to fit your design */
-    margin-right: 10px; /* Add space between text and form */
+    max-width: 80%; 
+    margin-right: 10px; 
     margin-top: 80px;
     font-size: larger;
   }
@@ -28,7 +28,7 @@
     max-width: 600px;
     margin-top: 50px;
     margin-right: 80px;
-    text-align: left; /* Ensure text inside the form is left-aligned */
+    text-align: left; 
   }
   
   form{
@@ -62,20 +62,20 @@
   }
 
   .send_button {
-    background-color: gray; /* Green */
+    background-color: gray; 
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    transition: background-color 0.3s ease; 
 }
 
 .send_button:hover {
-    background-color: #45a049; /* Darker green */
+    background-color: #45a049; 
 }
 
-/* phone and email on contact page */
+/* phone email and location on contact page */
 .contact-details {
   text-align: left;
   width: 100%;
@@ -87,16 +87,24 @@
 }
 
 .contact-item img.icon,
-.contact-item-2 img.icon {
-    width: 24px; /* Adjust the size as needed */
-    height: 24px; /* Adjust the size as needed */
+.contact-item-2 img.icon,
+.contact-item-3 img.icon{
+    width: 24px; 
+    height: 24px; 
 }
 
 .contact-item,
-.contact-item-2 {
-    display:flex; /* Changed from inline-flex to block */
+.contact-item-2,
+.contact-item-3 {
+    display:flex; 
     align-items: center;
-    gap: 10px;
+    gap: 12px;
+    padding: 5px;
+}
+
+/* map styling */
+iframe{
+  padding: 15px;
 }
 
 /* phone view mode */
@@ -108,9 +116,9 @@
   .text_container,
   .form_container {
     width: 100%; /* Full width on smaller screens */
-    max-width: none; /* Remove max-width to allow full flexibility */
-    margin-right: 0; /* Remove right margin */
-    margin-top: 20px; /* Adjust top margin for spacing */
+    max-width: none; 
+    margin-right: 0; 
+    margin-top: 20px; 
     text-align: center; /* Center align text and form on smaller screens */
   }
 
@@ -119,8 +127,9 @@
   }
 
   .contact-item,
-  .contact-item-2 {
-    justify-content: center; /* Center align items horizontally */
+  .contact-item-2,
+  .contact-item-3 {
+    justify-content: center; 
   }
 
   .text_container p{

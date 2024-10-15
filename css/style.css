@@ -1,4 +1,4 @@
-/* GENERAL */
+
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 /* Reset and remove all default padding */
@@ -126,8 +126,8 @@ body{
   /* Style the overlay-text */
   .overlay-text {
     position: absolute;
-    top: 50%; /* Adjust this value to vertically center the text */
-    left: 50%; /* Adjust this value to horizontally center the text */
+    top: 50%; 
+    left: 50%; 
     transform: translate(-50%, -50%); 
     color: black; 
     padding: 10px 20px; 
@@ -170,8 +170,8 @@ body{
     font-size: 20px;  
     font-weight: 400;
     border: 1.5px solid black; 
-    text-decoration: none; /* Remove default underline */
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    text-decoration: none; 
+    transition: all 0.3s ease; 
 }
 
 
@@ -186,8 +186,8 @@ body{
     font-size: 20px;  
     font-weight: 400;
     border: 1.5px solid black; 
-    text-decoration: none; /* Remove default underline */
-    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    text-decoration: none; 
+    transition: all 0.3s ease; 
     margin-top: 25px;
 }
 

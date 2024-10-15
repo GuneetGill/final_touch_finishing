@@ -58,12 +58,6 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
   
-  // Ensure clicking outside the image closes the enlarged view
-  // document.querySelector('.popup').addEventListener('click', function(event) {
-  //   if (event.target === event.currentTarget) {
-  //     this.style.display = 'none';
-  //   }
-  // });
   const popupElement = document.querySelector('.popup');
 if (popupElement) {
     popupElement.addEventListener('click', function(event) {

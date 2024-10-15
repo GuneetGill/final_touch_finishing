@@ -18,7 +18,6 @@
       width: 1200px;
       height: 450px;
       opacity: 0.4;
-      /* position:relative; */
       top: 30px;
       object-fit: cover;
     }
@@ -26,8 +25,8 @@
     /* Style the overlay-text */
     .overlay-text {
       position: absolute;
-      top: 50%; /* Adjust this value to vertically center the text */
-      left: 50%; /* Adjust this value to horizontally center the text */
+      top: 50%; 
+      left: 50%; 
       transform: translate(-50%, -50%); 
       color: black; 
       padding: 10px 20px; 
@@ -62,10 +61,10 @@
     }
     
     .bullet-points {
-        list-style-type: circle; /* Change disc to other values for different bullet styles */
+        list-style-type: circle; 
         text-align: center;
         margin-top: 20px;
-        margin-right: 20px; /* Adjust the right margin to control the space between the lists */
+        margin-right: 20px;
         margin-left: 20px;
     }
     
